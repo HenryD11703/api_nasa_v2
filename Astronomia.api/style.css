@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #d7dde4;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(black , blue , white);
+
+  } 
+
+
+
+h1 {
+    color: rgb(216, 202, 202);
+}
+
+#image {
+  max-width: 80%;
+  margin-top: 20px;
+  border: 3px solid #45a29e;
+  border-radius: 10px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:50px;
+  min-height: auto;
+  margin-top: 100px;
+}
+
+button {
+  background-color: rgb(140, 108, 150);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  
+}
+
