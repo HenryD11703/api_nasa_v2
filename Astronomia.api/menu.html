@@ -1,25 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-    <div class="estilo">
-        <img width="200px" src="Color-NASA.jpg" alt="">
-    </div>
-        <h1>Hola,¿que deseas ver hoy?</h1>
-    <div class="botones">
-    </div>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .menu-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 60px);
+      gap: 40px;
+      text-align: center;
+    }
+
+    .menu-hero img {
+      width: 140px;
+      opacity: 0.9;
+    }
+
+    .menu-hero h1 {
+      font-size: 2rem;
+    }
+
+    .menu-hero p {
+      color: #7a8eaa;
+      font-size: 0.95rem;
+    }
+
+    .menu-cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 28px 36px;
+      text-decoration: none;
+      color: #d0d8e8;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s, border-color 0.2s;
+      min-width: 180px;
+    }
+
+    .menu-card:hover {
+      background: rgba(126, 184, 247, 0.1);
+      border-color: rgba(126, 184, 247, 0.5);
+      transform: translateY(-3px);
+      color: #7eb8f7;
+    }
+
+    .menu-card span {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: #5a7090;
+      margin-top: 4px;
+    }
+  </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html"><button id="uno-btn"> Ver Imagen Astronomica del día</button></a></li>
-            <li><a href="./novedades.html"><button id="dos-btn">Ver Novedades</button></a></li>
-            <li><a href="./curiosidades.html"><button id="tres-btn">Ver Curiosidades</button></a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a class="nav-brand" href="menu.html">NASA Explorer</a>
+    <ul>
+      <li><a href="index.html">Imagen del Dia</a></li>
+      <li><a href="novedades.html">NEO</a></li>
+      <li><a href="curiosidades.html">EPIC</a></li>
+    </ul>
+  </nav>
+  <div class="menu-hero">
+    <img src="Color-NASA.jpg" alt="NASA logo">
+    <div>
+      <h1>NASA Explorer</h1>
+      <p>Explora datos reales de la API publica de NASA</p>
+    </div>
+    <div class="menu-cards">
+      <a href="index.html" class="menu-card">
+        Imagen del Dia
+        <span>APOD</span>
+      </a>
+      <a href="novedades.html" class="menu-card">
+        Objetos Cercanos
+        <span>NEO Browse</span>
+      </a>
+      <a href="curiosidades.html" class="menu-card">
+        Imagenes EPIC
+        <span>Tierra desde el espacio</span>
+      </a>
+    </div>
+  </div>
 </body>
+
 </html>

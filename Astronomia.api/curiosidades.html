@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA EPIC - Imagenes de la Tierra</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #galeria {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .epic-card {
-            width: 300px;
-        }
-        .epic-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .epic-card p {
-            text-align: center;
-            margin: 4px 0 0 0;
-            font-size: 0.85rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA - EPIC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <a class="nav-brand" href="menu.html">NASA Explorer</a>
+    <ul>
+      <li><a href="index.html">Imagen del Dia</a></li>
+      <li><a href="novedades.html">NEO</a></li>
+      <li><a href="curiosidades.html" class="active">EPIC</a></li>
+    </ul>
+  </nav>
+  <main>
     <h1>Imagenes EPIC de la Tierra</h1>
     <div id="galeria"></div>
-    <script src="curiosidades.js"></script>
+  </main>
+  <script src="curiosidades.js"></script>
 </body>
 </html>

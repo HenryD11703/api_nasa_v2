@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <title>NASA NEO - Objetos Cercanos a la Tierra</title>
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    .neo-card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 16px;
-      margin: 12px 0;
-    }
-    .neo-card h2 {
-      margin: 0 0 8px 0;
-    }
-    .neo-card a {
-      display: inline-block;
-      margin-top: 8px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA - NEO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Objetos Cercanos a la Tierra (NEO)</h1>
-  <div id="resultado"></div>
+  <nav>
+    <a class="nav-brand" href="menu.html">NASA Explorer</a>
+    <ul>
+      <li><a href="index.html">Imagen del Dia</a></li>
+      <li><a href="novedades.html" class="active">NEO</a></li>
+      <li><a href="curiosidades.html">EPIC</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Objetos Cercanos a la Tierra (NEO)</h1>
+    <div id="resultado"></div>
+  </main>
   <script src="novedades.js"></script>
 </body>
-
-</html>
+</html>

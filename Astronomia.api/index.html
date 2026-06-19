@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <title>NASA APOD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA - Inicio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Imagen Astronómica del Día NASA</h1>
-  <button id="loadBtn">Cargar Imagen</button>
-  <div id="content">
-    <h2 id="title"></h2>
-    <img id="image" alt="imagen">
-    <p id="description"></p>
-  </div>
+  <nav>
+    <a class="nav-brand" href="menu.html">NASA Explorer</a>
+    <ul>
+      <li><a href="index.html" class="active">Imagen del Dia</a></li>
+      <li><a href="novedades.html">NEO</a></li>
+      <li><a href="curiosidades.html">EPIC</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Imagen Astronomica del Dia</h1>
+    <button id="loadBtn">Cargar Imagen</button>
+    <div id="content">
+      <h2 id="title"></h2>
+      <img id="image" alt="imagen astronomica">
+      <p id="description"></p>
+    </div>
+  </main>
   <script src="base.js"></script>
 </body>
-
 </html>
