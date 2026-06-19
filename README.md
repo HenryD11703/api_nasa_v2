@@ -56,9 +56,8 @@ Todas las secciones consumen datos de la **NASA Open APIs**:
    ```
 2. **Configura tu API Key:**
 
-   Abre los archivos JavaScript (ase.js, 
-ovedades.js, curiosidades.js) y reemplaza el valor de la variable API_KEY con tu clave personal:
-    
+   Abre los archivos JavaScript (base.js, novedades.js, curiosidades.js) y reemplaza el valor de la variable API_KEY con tu clave personal:
+
    ```js
    const API_KEY = 'TU_API_KEY_AQUI';
    ```
